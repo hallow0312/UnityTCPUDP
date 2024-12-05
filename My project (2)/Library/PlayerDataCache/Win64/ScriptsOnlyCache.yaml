@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CameraManager
     - Client
     - GameManager
+    - PlayerController
     - PlayerManager
     - ThreadManager
     - UIManager
@@ -71,6 +73,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -90,7 +96,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18934}
     - Class: 114
+      Script: {instanceID: 19352}
+    - Class: 114
       Script: {instanceID: 20064}
+    - Class: 114
+      Script: {instanceID: 20210}
     - Class: 114
       Script: {instanceID: 20242}
     - Class: 114
@@ -100,7 +110,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21068}
     - Class: 114
-      Script: {instanceID: 23074}
+      Script: {instanceID: 22848}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -524,7 +534,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 9a8a3d5e91c5e0631f20770bd8f3abf8
+      Hash: fe4b2fcb1e96f4de0f8deba4abb70311
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CameraManager
@@ -999,4 +1009,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/user/Desktop/My project (2)/Build/My project (2).exe
+  playerPath: C:/Users/user/Desktop/2DGame/UnityTCPUDP/My project (2)/Build/My project
+    (2).exe

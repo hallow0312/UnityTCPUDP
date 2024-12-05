@@ -8,58 +8,63 @@ namespace GameServer
     class Player
     {
         public int id;
-        public string username; //유저네임 
+        public string username;
 
         public Vector3 position;
-        public Quaternion rotation; //차원 벡터공간에서의 회전 queternion
+        public Quaternion rotation;
 
-        private float MoveSpeed = 5f / Constants.TICS_PER_SEC;
+        private float moveSpeed = 5f / Constants.TICS_PER_SEC;
         private bool[] inputs;
-        public Player(int _id, string _username , Vector3  _spawnPosition)
+
+        public Player(int _id, string _username, Vector3 _spawnPosition)
         {
             id = _id;
-            username = _username;   
+            username = _username;
             position = _spawnPosition;
             rotation = Quaternion.Identity;
+
             inputs = new bool[4];
         }
+
         public void Update()
         {
-            Vector2 InputDirection = Vector2.Zero;
+            Vector2 _inputDirection = Vector2.Zero;
             if (inputs[0])
             {
-                InputDirection.Y += 1;
+                _inputDirection.Y += 1;
             }
             if (inputs[1])
             {
-                InputDirection.Y -= 1;
+                _inputDirection.Y -= 1;
             }
             if (inputs[2])
             {
-                InputDirection.X -= 1;
+                _inputDirection.X += 1;
             }
             if (inputs[3])
             {
-                InputDirection.X -= 1;
+                _inputDirection.X -= 1;
             }
-            Move(InputDirection);
+
+            Move(_inputDirection);
         }
+
         private void Move(Vector2 _inputDirection)
         {
-            Vector3 forward = Vector3.Transform(new Vector3(0, 0, 1), rotation);
-            Vector3 _right = Vector3.Normalize(Vector3.Cross(forward, new Vector3(0, 1, 0)));
-            Vector3 moveDirection = _right * _inputDirection.X + forward * _inputDirection.Y;
-            position += moveDirection * moveDirection;
+            Vector3 _forward = Vector3.Transform(new Vector3(0, 0, 1), rotation);
+            Vector3 _right = Vector3.Normalize(Vector3.Cross(_forward, new Vector3(0, 1, 0)));
+
+            Vector3 _moveDirection = _right * _inputDirection.X + _forward * _inputDirection.Y;
+            position += _moveDirection * moveSpeed;
 
             ServerSend.PlayerPosition(this);
             ServerSend.PlayerRotation(this);
-
         }
-        public void SetInputs(bool[] _inputs, Quaternion _rotation)
+
+        public void SetInput(bool[] _inputs, Quaternion _rotation)
         {
             inputs = _inputs;
             rotation = _rotation;
         }
     }
-
 }

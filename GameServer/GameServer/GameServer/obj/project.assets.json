@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\GameServer\\GameServer\\GameServer\\GameServer.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\2DGame\\UnityTCPUDP\\GameServer\\GameServer\\GameServer\\GameServer.csproj",
       "projectName": "GameServer",
-      "projectPath": "C:\\Users\\user\\Desktop\\GameServer\\GameServer\\GameServer\\GameServer.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\2DGame\\UnityTCPUDP\\GameServer\\GameServer\\GameServer\\GameServer.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\GameServer\\GameServer\\GameServer\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\2DGame\\UnityTCPUDP\\GameServer\\GameServer\\GameServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

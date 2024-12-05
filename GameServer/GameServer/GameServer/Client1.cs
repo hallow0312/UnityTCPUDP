@@ -68,7 +68,7 @@ namespace GameServer
                     int _byteLength = stream.EndRead(_result);
                     if (_byteLength <= 0)
                     {
-                        //disconnect
+                        Server.clients[id].DisConnect();
                         return;
                     }
                     byte[] _data = new byte[_byteLength];
@@ -80,7 +80,7 @@ namespace GameServer
                 catch (Exception e)
                 {
                     Console.WriteLine($"Error receiving TCP data {e}");
-                    //TODO DisConnect
+                    Server.clients[id].DisConnect();
                 }
             }
 
@@ -119,6 +119,15 @@ namespace GameServer
 
             }
 
+            public void DisConnect()
+            {
+                socket.Close();
+                stream = null;
+                receivedData = null;
+                receiveBuffer = null;
+                socket = null;
+            }
+
         }
         public class UDP
         {
@@ -150,6 +159,10 @@ namespace GameServer
                     }
                 });
             }
+            public void DisConnect()
+            {
+                 endPoint = null;
+            }
         }
 
         public void SendIntoGame(string  _playerName)
@@ -174,6 +187,15 @@ namespace GameServer
                     ServerSend.SpawnPlayer(_client.id, player); 
                 }
             }
+        }
+
+        private void DisConnect()
+        {
+            Console.WriteLine($"{tcp.socket.Client.RemoteEndPoint} : disconnected");
+
+            player = null;
+            tcp.DisConnect();
+            udp.DisConnect();
         }
     }
 }

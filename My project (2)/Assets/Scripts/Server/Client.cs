@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Net;
 using System.Net.Sockets;
 using System;
+using Unity.VisualScripting;
 
 public class Client : MonoBehaviour
 {
@@ -16,8 +17,25 @@ public class Client : MonoBehaviour
     public TCP tcp;
     public UDP udp;
 
+    private bool isConnected = false;
     private delegate void PacketHandler(Packet _packet);
     private static Dictionary<int, PacketHandler> packetHandlers;
+
+    private void OnApplicationQuit()
+    {
+        DisConnect();
+    }
+
+    private void DisConnect()
+    {
+        if(isConnected)
+        {
+            isConnected = false;
+            tcp.socket.Close();
+            udp.socket.Close();
+            Debug.Log("DisConnect");
+        }
+    }
 
     private void Awake()
     {
@@ -41,7 +59,7 @@ public class Client : MonoBehaviour
     public void ConnectToServer()
     {
         InitializeClientData();
-
+        isConnected = true;
         tcp.Connect();
     }
 
@@ -103,7 +121,7 @@ public class Client : MonoBehaviour
                 int _byteLength = stream.EndRead(_result);
                 if (_byteLength <= 0)
                 {
-                    // TODO: disconnect
+                    instance.DisConnect(); 
                     return;
                 }
 
@@ -115,8 +133,16 @@ public class Client : MonoBehaviour
             }
             catch
             {
-                // TODO: disconnect
+                DisConnect();
             }
+        }
+        private void DisConnect()
+        {
+            instance.DisConnect();
+            stream = null;
+            receivedData = null;
+            receiveBuffer = null;
+            socket = null;
         }
 
         private bool HandleData(byte[] _data)
@@ -214,7 +240,7 @@ public class Client : MonoBehaviour
 
                 if (_data.Length < 4)
                 {
-                    // TODO: disconnect
+                    instance.DisConnect();
                     return;
                 }
 
@@ -222,10 +248,15 @@ public class Client : MonoBehaviour
             }
             catch
             {
-                // TODO: disconnect
+                DisConnect();
             }
         }
-
+        private void DisConnect()
+        {
+            instance.DisConnect();
+            endPoint = null;
+            socket = null;
+        }
         private void HandleData(byte[] _data)
         {
             using (Packet _packet = new Packet(_data))
