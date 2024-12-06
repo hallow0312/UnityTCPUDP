@@ -55,10 +55,11 @@ public class ClientHandle : MonoBehaviour
         float _health = _packet.ReadFloat();
 
         GameManager.players[_id].SetHealth(_health);
-        Debug.Log($"{_health}");
+     
     }
     public static void PlayerRespawned(Packet _packet)
     {
+        Debug.Log("PlayerRespawn");
         int _id = _packet.ReadInt();
         GameManager.players[_id].Respawn();
     }

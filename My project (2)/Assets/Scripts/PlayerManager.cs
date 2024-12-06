@@ -30,21 +30,14 @@ public class PlayerManager : MonoBehaviour
 
     public void Die()
     {
-        SetRenderersEnabled(false);
+       model.enabled = false;
     }
 
     public void Respawn()
     {
-        SetRenderersEnabled(true);
+        Debug.Log("Respawn");
+        model.enabled = true;
         SetHealth(maxHealth);
     }
-    private void SetRenderersEnabled(bool isEnabled)
-    {
-        model.enabled = isEnabled;
-        MeshRenderer[] renderers = model.GetComponentsInChildren<MeshRenderer>();
-        foreach (MeshRenderer renderer in renderers)
-        {
-            renderer.enabled = isEnabled; // 활성화/비활성화 설정
-        }
-    }
+    
 }
