@@ -69,6 +69,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -678,7 +682,7 @@ ScriptsOnlyBuild:
     className: PanelEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 188fa1317c63ba87167f8cc4cdfa5877
+      Hash: 691a79bc646ea30677b825968f6cc74a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerController
@@ -1002,7 +1006,7 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ec53cee27481864b205d5bdfbe0c9fd9
+      Hash: 8a99c4e88fd72772836c565a6a8345eb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerManager

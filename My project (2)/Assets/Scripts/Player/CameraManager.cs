@@ -19,7 +19,15 @@ public class CameraManager : MonoBehaviour
     }
     private void Update()
     {
-        Look();
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            ToggleCursorMode();
+        }
+        if(Cursor.lockState==CursorLockMode.Locked)
+        {
+            Look();
+        }
+   
         Debug.DrawRay(transform.position, transform.forward * 2, Color.red);
     }
     private void Look()
@@ -35,6 +43,18 @@ public class CameraManager : MonoBehaviour
         transform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
         player.transform.rotation = Quaternion.Euler(0, horizontalRotation, 0);
 
+    }
+    private void ToggleCursorMode()
+    {
+        Cursor.visible=!Cursor.visible;
+        if(Cursor.lockState==CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.lockState=CursorLockMode.None;
+        }
     }
 
 }

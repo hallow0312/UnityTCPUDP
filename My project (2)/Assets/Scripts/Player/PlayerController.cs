@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Transform objectTransform;
     private void FixedUpdate()
     {
         SendInputToServer();
     }
-
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            ClientSend.PlayerShoot(objectTransform.forward);
+        }
+    }
     private void SendInputToServer()
     {
         bool[] _inputs = new bool[]
@@ -17,6 +24,7 @@ public class PlayerController : MonoBehaviour
             Input.GetKey(KeyCode.S),
             Input.GetKey(KeyCode.A),
             Input.GetKey(KeyCode.D),
+            Input.GetKey(KeyCode.Space),
         };
 
         ClientSend.PlayerMovement(_inputs);
