@@ -63,4 +63,53 @@ public class ClientHandle : MonoBehaviour
         int _id = _packet.ReadInt();
         GameManager.players[_id].Respawn();
     }
+    public static void CreateItemSpawner(Packet _packet)
+    {
+        int _spawnerId =_packet.ReadInt();
+        Vector3 _spawnerPostion = _packet.ReadVector3();
+        bool hasItem= _packet.ReadBool();
+
+        GameManager.instance.CreateItemSpawner(_spawnerId, _spawnerPostion, hasItem);
+    }
+
+    public static void ItemSpawned(Packet _packet)
+    {
+        int _spawnerId = _packet.ReadInt();
+
+        GameManager.itemSpawners[_spawnerId].ItemSpawned();
+    }
+
+    public static void ItemPickedUp(Packet _packet)
+    {
+        int _spawnerId = _packet.ReadInt();
+        int _byPlayer = _packet.ReadInt();
+
+        GameManager.itemSpawners[_spawnerId].ItemPickedUp();
+        GameManager.players[_byPlayer].ItemCount++;
+    }
+    public static void SpawnProjectile(Packet _packet)
+    {
+        int _projectileId = _packet.ReadInt();
+        Vector3 _position = _packet.ReadVector3();
+        int _thrownByPlayer = _packet.ReadInt();
+
+        GameManager.instance.SpawnProjectile(_projectileId, _position);
+        GameManager.players[_thrownByPlayer].ItemCount--;
+    }
+
+    public static void ProjectilePosition(Packet _packet)
+    {
+        int _projectileId = _packet.ReadInt();
+        Vector3 _position = _packet.ReadVector3();
+
+        GameManager.projectiles[_projectileId].transform.position = _position;
+    }
+
+    public static void ProjectileExploded(Packet _packet)
+    {
+        int _projectileId = _packet.ReadInt();
+        Vector3 _position = _packet.ReadVector3();
+
+        GameManager.projectiles[_projectileId].Explode(_position);
+    }
 }

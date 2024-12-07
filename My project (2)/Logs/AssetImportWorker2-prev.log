@@ -1,0 +1,438 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.22f1 (887be4894c44) revision 8944612'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32502 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/user/Desktop/2DGame/UnityTCPUDP/My project (2)
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51124
+Successfully changed project path to: C:/Users/user/Desktop/2DGame/UnityTCPUDP/My project (2)
+C:/Users/user/Desktop/2DGame/UnityTCPUDP/My project (2)
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13376] Host "[IP] 123.199.104.189 [Port] 0 [Flags] 2 [Guid] 1272234924 [EditorId] 1272234924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I97L6LM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13376] Host "[IP] 123.199.104.189 [Port] 0 [Flags] 2 [Guid] 1272234924 [EditorId] 1272234924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-I97L6LM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 7.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.22f1 (887be4894c44)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Desktop/2DGame/UnityTCPUDP/My project (2)/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Ti (ID=0x2803)
+    Vendor:   NVIDIA
+    VRAM:     7949 MB
+    Driver:   32.0.15.6094
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006944 seconds.
+- Loaded All Assemblies, in  0.296 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 259 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.488 seconds
+Domain Reload Profiling: 783ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (121ms)
+		LoadAssemblies (95ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (119ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (106ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (489ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (335ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (76ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.422 seconds
+Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.376 seconds
+Domain Reload Profiling: 796ms
+	BeginReloadAssembly (110ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (259ms)
+		LoadAssemblies (209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (116ms)
+			TypeCache.Refresh (103ms)
+				TypeCache.ScanAssembly (91ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (376ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (283ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (210ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3104 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.3 KB). Loaded Objects now: 3573.
+Memory consumption went from 131.7 MB to 131.6 MB.
+Total: 2.285900 ms (FindLiveObjects: 0.181300 ms CreateObjectMapping: 0.049400 ms MarkObjects: 1.970100 ms  DeleteObjects: 0.084500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7217.864252 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_A_01.prefab
+  artifactKey: Guid(95fe2533720aeb743ade98ad01dc2812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_A_01.prefab using Guid(95fe2533720aeb743ade98ad01dc2812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975771786cf91726b40dcd3df2e4dc5e') in 0.063850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_D_01.prefab
+  artifactKey: Guid(d4de3ef49b2bacd49b5323211ec53005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_D_01.prefab using Guid(d4de3ef49b2bacd49b5323211ec53005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db4289c9382c20bd341ceb7cf5d790d') in 0.011062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_B_01.prefab
+  artifactKey: Guid(fde337a468e20014bafb68143b6a0063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_B_01.prefab using Guid(fde337a468e20014bafb68143b6a0063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e843604a2aac93f424ff53373a10393d') in 0.007013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_D_03.prefab
+  artifactKey: Guid(68ca1c898abaf1b49b78977704fcd13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_D_03.prefab using Guid(68ca1c898abaf1b49b78977704fcd13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fec301691c6bc5fb3f418f924bc03ae') in 0.009304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_A_03.prefab
+  artifactKey: Guid(eef6afac8029c054897278b66d51f44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_A_03.prefab using Guid(eef6afac8029c054897278b66d51f44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd331007ce8c706e9d373e69d2a92e256') in 0.011193 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_D_01.prefab
+  artifactKey: Guid(4876715f92d30a040a6785bfb1a71c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_D_01.prefab using Guid(4876715f92d30a040a6785bfb1a71c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094a38251c6bacbaf5df163c1956059a') in 0.009264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_B_04.prefab
+  artifactKey: Guid(785b55d1ccd47034e8d3505780c6e9ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_B_04.prefab using Guid(785b55d1ccd47034e8d3505780c6e9ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4172a92cdd25c7204c1bf3a2ac6cdef5') in 0.005519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/rock_A_03.prefab
+  artifactKey: Guid(66bc18e6e0aee54408b69d6effc93dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/rock_A_03.prefab using Guid(66bc18e6e0aee54408b69d6effc93dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6407fe735f3f6928ca1007c30b7812') in 0.008229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_B_02.prefab
+  artifactKey: Guid(fcdf142f3b1adf84a8d03ef514947dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_B_02.prefab using Guid(fcdf142f3b1adf84a8d03ef514947dd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3edb98e49993840da22f75f185da0ce0') in 0.005659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_C_01.prefab
+  artifactKey: Guid(ea659b8744c4b674da8200d2e9ce546e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_C_01.prefab using Guid(ea659b8744c4b674da8200d2e9ce546e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9389207a1b3d6d88adc292e330285574') in 0.009139 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_C_01.prefab
+  artifactKey: Guid(8b404e5e7b6ccea4895a317b2617cc89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/island_C_01.prefab using Guid(8b404e5e7b6ccea4895a317b2617cc89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6a32f22adc82670346567727714622') in 0.005286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_C_02.prefab
+  artifactKey: Guid(f0a291ea0f3501f438f285907ce69209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Environment/platform_C_02.prefab using Guid(f0a291ea0f3501f438f285907ce69209) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7825b5b62a41d191b0f6c28efd81b946') in 0.011173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 80.402741 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage
+  artifactKey: Guid(cc58facf08d0b1a499fdba643aed49dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage using Guid(cc58facf08d0b1a499fdba643aed49dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e74b6b7d7ac138e6676c58d14c2cc5') in 0.000437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.068071 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_A.prefab
+  artifactKey: Guid(0e5b94df29f597247a3ebfcd4c1ba82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_A.prefab using Guid(0e5b94df29f597247a3ebfcd4c1ba82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e37844abe7f2c67bbd3abcd4ebbd7bb') in 0.008336 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_A_02.prefab
+  artifactKey: Guid(56068eb8623a14c44a413a042d072c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_A_02.prefab using Guid(56068eb8623a14c44a413a042d072c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9052d6c387535eb9fb70ccb8911693') in 0.015516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_03.prefab
+  artifactKey: Guid(6cb1774a845d6d946a1b1c76ff79990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_03.prefab using Guid(6cb1774a845d6d946a1b1c76ff79990e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ca85f7cc7bf99fa6a3a74956d7a47f') in 0.020050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_01.prefab
+  artifactKey: Guid(b3d826b50991cc3499d92a449707cd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_01.prefab using Guid(b3d826b50991cc3499d92a449707cd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6776941b666d82c97751c335bf90aa22') in 0.012830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_D.prefab
+  artifactKey: Guid(e6d211ec530ecab468a403826c48f32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_D.prefab using Guid(e6d211ec530ecab468a403826c48f32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f16cb933e086b25369d59b0833ac0b2') in 0.016707 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_D_04.prefab
+  artifactKey: Guid(102dcc1eaa01cb44fbd5600815e16b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_D_04.prefab using Guid(102dcc1eaa01cb44fbd5600815e16b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be92a38558a10e4a32ba190cc5864990') in 0.025157 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_A_01.prefab
+  artifactKey: Guid(6735ecb9a1aac244281c4906409c6d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_A_01.prefab using Guid(6735ecb9a1aac244281c4906409c6d6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298cee56de4516e24a5973f798650e37') in 0.023268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_C.prefab
+  artifactKey: Guid(8ed094e18b702264aa6484d8a09f1630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/acacia_C.prefab using Guid(8ed094e18b702264aa6484d8a09f1630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc38a41d2f1cddd9d34fd76c0afc76f2') in 0.006238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_02.prefab
+  artifactKey: Guid(145b9c30bd1da74429578c4c4eb9cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_B_02.prefab using Guid(145b9c30bd1da74429578c4c4eb9cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234242f510910ce4dd4c3c8cf8f10f52') in 0.010445 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_C_03.prefab
+  artifactKey: Guid(8da175d9cee521042a6da85a39321c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_C_03.prefab using Guid(8da175d9cee521042a6da85a39321c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'addde015491cde66649b4cd8726ec5af') in 0.005280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_D_01.prefab
+  artifactKey: Guid(57e0a2372da2e054bad78bdfd7cea204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Foliage/pine_D_01.prefab using Guid(57e0a2372da2e054bad78bdfd7cea204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68831fd8ecbabe5602cf794cc1a7c9ec') in 0.005891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 7.953477 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_A_01.prefab
+  artifactKey: Guid(1e5360f1c1a55cb488d2240d77443600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_A_01.prefab using Guid(1e5360f1c1a55cb488d2240d77443600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c86a975d9ae6c8d368f94540333941') in 0.022151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_03.prefab
+  artifactKey: Guid(e1c6c2cfbf6b335418eca16f59b57275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_03.prefab using Guid(e1c6c2cfbf6b335418eca16f59b57275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c71364e1fc98e9780c7497c2aa380a0') in 0.008213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_02.prefab
+  artifactKey: Guid(b3d9062e5e13a1c43816896ee48795d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_02.prefab using Guid(b3d9062e5e13a1c43816896ee48795d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e36fabfc2cb1f15fe45db6ff19ba53') in 0.010563 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_01.prefab
+  artifactKey: Guid(0dbeee12187018f4aaa131175f93e634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/fence_A_01.prefab using Guid(0dbeee12187018f4aaa131175f93e634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec034601e5e0c584c555dbe645c2152') in 0.010152 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/cloud_A_01.prefab
+  artifactKey: Guid(fc1044692b749584ea994677f766e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/cloud_A_01.prefab using Guid(fc1044692b749584ea994677f766e007) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb41904a443e65db51abef51065dd1b') in 0.006468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_C_04.prefab
+  artifactKey: Guid(aeb1d1421bf8c2d4cb6d8b1b1a3dd37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_C_04.prefab using Guid(aeb1d1421bf8c2d4cb6d8b1b1a3dd37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6541cb3215b8de0494c08cabe9a2ea5') in 0.005992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_C_01.prefab
+  artifactKey: Guid(32abd7317f701f64abb29dc25c4a9c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Zololgo/FlatPoly Floating Islands/Prefabs/Other/bridge_C_01.prefab using Guid(32abd7317f701f64abb29dc25c4a9c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5093b613e50c38cd888e861d4c42833') in 0.005136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 스레드 종료 또는 응용 프로그램 요청 때문에 I/O 작업이 취소되었습니다.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

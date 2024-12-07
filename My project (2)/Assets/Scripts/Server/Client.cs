@@ -287,6 +287,14 @@ public class Client : MonoBehaviour
             {(int)ServerPackets.playerDisconnected,ClientHandle.PlayerDisconnected },
             {(int)ServerPackets.playerHp,ClientHandle.PlayerHealth },
             {(int)ServerPackets.playerRespawn,ClientHandle.PlayerRespawned },
+            {(int)ServerPackets.CreateItemSpawner,ClientHandle.CreateItemSpawner},
+            {(int)ServerPackets.itemSpawned,ClientHandle.ItemSpawned},
+            {(int)ServerPackets.ItemPickedUp,ClientHandle.ItemPickedUp},
+            {(int)ServerPackets.spawnProjectile,ClientHandle.SpawnProjectile},
+            {(int)ServerPackets.projectilePosition,ClientHandle.ProjectilePosition},
+            {(int)ServerPackets.projectileExploded,ClientHandle.ProjectileExploded},
+
+
 
 
         };

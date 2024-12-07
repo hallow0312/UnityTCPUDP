@@ -15,6 +15,10 @@ public class PlayerController : MonoBehaviour
         {
             ClientSend.PlayerShoot(objectTransform.forward);
         }
+        if(Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ClientSend.PlayerThrowItem(objectTransform.forward);
+        }
     }
     private void SendInputToServer()
     {
@@ -25,6 +29,7 @@ public class PlayerController : MonoBehaviour
             Input.GetKey(KeyCode.A),
             Input.GetKey(KeyCode.D),
             Input.GetKey(KeyCode.Space),
+            
         };
 
         ClientSend.PlayerMovement(_inputs);

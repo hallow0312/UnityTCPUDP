@@ -4,8 +4,10 @@ ScriptsOnlyBuild:
     - CameraManager
     - Client
     - GameManager
+    - ItemSpawner
     - PlayerController
     - PlayerManager
+    - ProjectileManager
     - ThreadManager
     - UIManager
     Unity.Rider.Editor.dll:
@@ -69,10 +71,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -94,36 +92,46 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17900}
     - Class: 114
-      Script: {instanceID: 18140}
+      Script: {instanceID: 17994}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18142}
     - Class: 114
-      Script: {instanceID: 18934}
+      Script: {instanceID: 18292}
     - Class: 114
-      Script: {instanceID: 19352}
+      Script: {instanceID: 18560}
     - Class: 114
-      Script: {instanceID: 20064}
+      Script: {instanceID: 18938}
     - Class: 114
-      Script: {instanceID: 20210}
+      Script: {instanceID: 19356}
     - Class: 114
-      Script: {instanceID: 20242}
+      Script: {instanceID: 20068}
     - Class: 114
-      Script: {instanceID: 20304}
+      Script: {instanceID: 20214}
     - Class: 114
-      Script: {instanceID: 20604}
+      Script: {instanceID: 20246}
     - Class: 114
-      Script: {instanceID: 21068}
+      Script: {instanceID: 20308}
     - Class: 114
-      Script: {instanceID: 22848}
+      Script: {instanceID: 20608}
+    - Class: 114
+      Script: {instanceID: 21072}
+    - Class: 114
+      Script: {instanceID: 30286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -328,6 +336,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: ecd7ec0c2b96d722c63473c63df895fb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ItemSpawner
+  - hash:
+      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -376,7 +390,7 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 86dcfda26423ef9caf9d3b7dbea4fcc2
+      Hash: eea9f9b472ff93f23a636d4fad2505f7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -422,6 +436,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 257564620240b7915a8c1fe82859457b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PlayerManager
   - hash:
       serializedVersion: 2
       Hash: 960935b102b3064f4b924de16426e340
@@ -1006,10 +1026,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 8a99c4e88fd72772836c565a6a8345eb
+      Hash: 715c86229c8c593a57bde1ecdb09c668
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PlayerManager
+    className: ProjectileManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
