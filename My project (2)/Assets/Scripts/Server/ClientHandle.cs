@@ -86,6 +86,7 @@ public class ClientHandle : MonoBehaviour
 
         GameManager.itemSpawners[_spawnerId].ItemPickedUp();
         GameManager.players[_byPlayer].ItemCount++;
+        GameManager.players[_byPlayer].UpdateItem();
     }
     public static void SpawnProjectile(Packet _packet)
     {
@@ -95,6 +96,8 @@ public class ClientHandle : MonoBehaviour
 
         GameManager.instance.SpawnProjectile(_projectileId, _position);
         GameManager.players[_thrownByPlayer].ItemCount--;
+        GameManager.players[_thrownByPlayer].UpdateItem();
+
     }
 
     public static void ProjectilePosition(Packet _packet)

@@ -30,6 +30,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   serializedClasses:
     UnityEngine.CoreModule:
@@ -46,6 +48,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
@@ -86,6 +89,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16654}
     - Class: 114
+      Script: {instanceID: 17358}
+    - Class: 114
       Script: {instanceID: 17650}
     - Class: 114
       Script: {instanceID: 17852}
@@ -104,6 +109,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19356}
     - Class: 114
+      Script: {instanceID: 19988}
+    - Class: 114
       Script: {instanceID: 20068}
     - Class: 114
       Script: {instanceID: 20214}
@@ -116,7 +123,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21072}
     - Class: 114
-      Script: {instanceID: 30286}
+      Script: {instanceID: 22852}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -438,7 +445,7 @@ ScriptsOnlyBuild:
     className: UnityOnControllerColliderHitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 257564620240b7915a8c1fe82859457b
+      Hash: 823a48498d61a095ec9ff14c526ba35b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerManager
